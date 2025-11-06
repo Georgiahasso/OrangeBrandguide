@@ -197,11 +197,49 @@ body {
     letter-spacing: -0.2px;
 }
 
+.color-hex-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
 .color-hex {
     font-family: 'Courier New', monospace;
     font-size: 14px;
     color: #7a7a7a;
-    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.color-hex:hover {
+    color: #00C2FF;
+}
+
+.copy-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.copy-btn:hover {
+    background: rgba(0, 194, 255, 0.2);
+    border-color: #00C2FF;
+    color: #00C2FF;
+    transform: scale(1.05);
+}
+
+.copy-icon {
+    font-size: 14px;
+    line-height: 1;
 }
 
 .color-role {
@@ -496,6 +534,33 @@ body {
     transform: translateY(-2px);
 }
 
+.download-btn {
+    background: linear-gradient(135deg, #FF6600 0%, #e65c00 100%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(255, 102, 0, 0.2);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #e65c00 0%, #cc5200 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+.download-btn span {
+    font-size: 16px;
+}
+
 @media (max-width: 768px) {
     .header h1 {
         font-size: 32px;
@@ -511,6 +576,10 @@ body {
     }
     .section {
         padding: 24px;
+    }
+    .download-btn {
+        font-size: 13px;
+        padding: 10px 16px;
     }
 }
 
